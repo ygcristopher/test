@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-family: Roboto, 'sans-serif';
+}
+
+.container {
+    width: 100%;
+    max-width: 35vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    object-fit: cover;
+}
+
+section {
+    width: 100%;
+    max-width: 30vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    margin-top: 10px
+}
+
+p {
+    margin: 10px 0px;
+}
+
+.gradient {
+    width: 250px;
+    height: 5px;
+    border: none;
+    
+    margin-bottom: 30px;
+
+    background: rgb(252,70,107);
+    background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#NBA {
+    width: 280px;
+    height: 220px
+}
+
+#WPP  {
+    width: 280px;
+    height: 220px
+}
+
+.gradient-nba {
+    width: 250px;
+    height: 5px;
+    border: none;
+    
+    margin-top: 15px;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(137,139,221,1) 1%, rgba(0,84,226,1) 99%);    
+} 
+
+.gradient-wpp {
+    width: 250px;
+    height: 5px;
+    border: none;
+    
+    margin-top: 15px;
+
+    background: rgb(51,104,128);
+    background: linear-gradient(0deg, rgba(51,104,128,1) 0%, rgba(53,207,229,1) 53%, rgba(73,210,144,1) 74%, rgba(119,253,45,1) 99%);
+}
+
+h2 {
+    width: 250px;
+    font-size: 20px
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    color: #FC5209;
+}
+
+
+
+a {
+    color: #FC5209;
+}
+
+
