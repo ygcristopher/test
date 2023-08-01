@@ -1,179 +1,235 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-    font-family: Roboto, 'sans-serif';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  font-family: Roboto, "sans-serif";
 }
 
-#container {
-    width: 100%;
-    max-width: 34vw;
-    object-fit: cover;
-    margin-right: auto;
-    margin-left: auto;
+.container {
+  width: 100%;
+  max-width: 35vw;
+  object-fit: cover;
+  margin: 0 auto;
 
-    // RESPONSIVE MOBILE 
-    @media(max-width:768px) {
-        width: 100%;
-        max-width: 550px;
-        padding: 5px;
-    }
-   
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+  }
+
+  @media (max-width: 1280px) {
+    width: 100%;
+    max-width: 800px;
+    flex-direction: column;
+  }
+
+
 }
 
 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    object-fit: cover;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 section {
-    width: 100%;
-    max-width: 30vw;
-    margin-right: auto;
-    margin-left: auto;
+  width: 100%;
+  max-width: 30vw;
+  margin-right: auto;
+  margin-left: auto;
 
-    // RESPONSIVE MOBILE 
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+  }
+
+  @media (max-width: 1280px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+h2 {
+  width: 250px;
+  font-size: 20px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.styles-fonts {
+  font-style: oblique;
+  color: #3339;
+  font-size: 13px;
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
+
+  
+  
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: 1280px) {
+    width: 100%;
+    
+  }
+}
+
+.card-content {
+    width: 100%;
+    max-width: 500px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 500px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 1280px) {
+    width: 100%;
+    max-width: 800px;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+#NBA {
+  width: 280px;
+  height: 220px;
+}
+
+#WPP {
+  width: 280px;
+  height: 220px;
+}
+
+.gradient {
+  width: 280px;
+  height: 5px;
+  border: none;
+
+  margin-bottom: 30px;
+
+  background: rgb(252, 70, 107);
+  background: radial-gradient(
+    circle,
+    rgba(252, 70, 107, 1) 0%,
+    rgba(63, 94, 251, 1) 100%
+  );
+
+  @media (max-width: 768px) {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    
+  }
+}
+
+.gradient-nba {
+  width: 180px;
+  height: 5px;
+  border: none;
+
+  margin-top: 15px;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(137, 139, 221, 1) 1%,
+    rgba(0, 84, 226, 1) 99%
+  );
+}
+
+.gradient-wpp {
+  width: 180px;
+  height: 5px;
+  border: none;
+
+  margin-top: 15px;
+
+  background: rgb(51, 104, 128);
+  background: linear-gradient(
+    0deg,
+    rgba(51, 104, 128, 1) 0%,
+    rgba(53, 207, 229, 1) 53%,
+    rgba(73, 210, 144, 1) 74%,
+    rgba(119, 253, 45, 1) 99%
+  );
+}
+
+footer {
+  width: 100%;
+  max-width: 35vw;
+  margin: 10px auto;
+  color: #fc5209;
+
+    /* MOBILE */
     @media(max-width:768px) {
         width: 100%;
         max-width: 500px;
         padding: 5px;
-    }
-}
+        margin-bottom: 5px;
+      }
 
-h1 {
-    margin-top: 10px
-}
-
-h2 {
-    // RESPONSIVE MOBILE 
-    @media(max-width:768px) {
+      @media (max-width: 1280px) {
         width: 100%;
-        text-align: center;   
-    }
-}
-
-p {
-    margin: 10px 0px;
-}
-
-.styles-fonts {
-    font-style: oblique ;
-    color: #3339;
-    font-size: 13px;
-}
-
-.cards {
-    display: flex;
-    justify-content: space-between;
-
-    // RESPONSIVE MOBILE 
-    @media(max-width:768px) {
-        width: 100%;
+        max-width: 100%;
         flex-direction: column;
-        padding: 5px;
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-}
-
-.card-content {
-    // RESPONSIVE MOBILE 
-    @media(max-width:768px) {
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-#NBA {
-    width: 280px;
-    height: 220px
-}
-
-#WPP  {
-    width: 280px;
-    height: 220px;
-
-    @media(max-width:768px) {
-        margin-top: 5px;
-    }
-}
-
-
-.gradient {
-    width: 280px;
-    height: 5px;
-    border: none;
-    
-    margin-bottom: 30px;
-
-    background: rgb(252,70,107);
-    background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
-
-    // RESPONSIVE MOBILE 
-    @media(max-width:768px) {
-        padding: 2px;
-        width: 100%;
-    }
-}
-
-
-.gradient-nba {
-    width: 180px;
-    height: 5px;
-    border: none;
-    
-    margin-top: 15px;
-
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(137,139,221,1) 1%, rgba(0,84,226,1) 99%);    
-} 
-
-.gradient-wpp {
-    width: 180px;
-    height: 5px;
-    border: none;
-    
-    margin-top: 15px;
-
-    background: rgb(51,104,128);
-    background: linear-gradient(0deg, rgba(51,104,128,1) 0%, rgba(53,207,229,1) 53%, rgba(73,210,144,1) 74%, rgba(119,253,45,1) 99%);
-}
-
-h2 {
-    width: 250px;
-    font-size: 20px
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    color: #FC5209;  
+        margin-bottom: 5px;
+        
+      }
 }
 
 a {
-    color: #FC5209;
+  color: #fc5209;
 }
 
-#text-footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.text-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  
+  @media (max-width: 1280px) {
+    margin-top: 5px;
+    font-size: 13px;
+  }
 }
-
-

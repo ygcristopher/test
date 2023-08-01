@@ -4,29 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    
+
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SCRIPT  -->
+    <script src="./main.js"></script>
+
     <title>Test Mandarin</title>
   </head>
   <body>
-    
-    <div id="container">
+    <div class="container">
       <img src="./assets/bannerHeader.png" alt="banner header" />
     </div>
 
     <section>
-      <img src="./assets/bannerNoticie.png" alt="banner noticie"/>
-      <h1>NRF 2020: conheça os top 5 assuntos do evento.</h1>
-      <p>
-        O maior evento sobre varejo do mundo mostrando as tendências,
-        oportunidades e inovações para o setor
-      </p>
-      <p class="styles-fonts">Fonte: CMO ADOBE</p>
-      <hr class="gradient" />
+      <div class="card-content">
+        <img src="./assets/bannerNoticie.png" alt="banner noticie" />
+        <h1>NRF 2020: conheça os top 5 assuntos do evento.</h1>
+        <p>
+          O maior evento sobre varejo do mundo mostrando as tendências,
+          oportunidades e inovações para o setor
+        </p>
+        <p class="styles-fonts">Fonte: CMO ADOBE</p>
+        <hr class="gradient" />
+      </div>
 
       <div class="cards">
         <div class="card-content">
@@ -40,26 +47,20 @@
           <img id="WPP" src="./assets/bannerWpp.png" alt="banner wpp" />
           <h2>Whatsapp terá função de pagamentos em 2020.</h2>
           <p class="styles-fonts">Fonte: Proxxima</p>
-          <hr class="gradient-wpp"/>
+          <hr class="gradient-wpp" />
         </div>
       </div>
     </section>
-    <footer id="container">
-        <img src="./assets/bannerFooter.png" alt="banner footer">
-        <div id="text-footer">
-          <p>
-            Copyright ® Mandarin. Todos os direitos reservados.
-            <br>
-            Caso não deeseje mais receber nossos e-mails, por favor 
-            <a onclick="openAlert()" href=""> clique aqui </a>
-          </p>
-          
-        </div>
+    <footer>
+      <img src="./assets/bannerFooter.png" alt="banner footer" />
+      <div class="text-footer">
+        <p>
+          Copyright ® Mandarin. Todos os direitos reservados.
+          <br />
+          Caso não deeseje mais receber nossos e-mails, por favor
+          <a onclick="openAlert()" href=""> clique aqui </a>
+        </p>
+      </div>
     </footer>
   </body>
-  <script>
-    function openAlert() {
-      alert("Você não recebera novos e-mails !")
-    }
-  </script>
 </html>
