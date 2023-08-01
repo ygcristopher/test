@@ -13,6 +13,7 @@
     margin-right: auto;
     margin-left: auto;
 
+    // RESPONSIVE MOBILE 
     @media(max-width:768px) {
         width: 100%;
         max-width: 550px;
@@ -36,6 +37,7 @@ section {
     margin-right: auto;
     margin-left: auto;
 
+    // RESPONSIVE MOBILE 
     @media(max-width:768px) {
         width: 100%;
         max-width: 500px;
@@ -48,6 +50,7 @@ h1 {
 }
 
 h2 {
+    // RESPONSIVE MOBILE 
     @media(max-width:768px) {
         width: 100%;
         text-align: center;   
@@ -68,6 +71,7 @@ p {
     display: flex;
     justify-content: space-between;
 
+    // RESPONSIVE MOBILE 
     @media(max-width:768px) {
         width: 100%;
         flex-direction: column;
@@ -81,6 +85,7 @@ p {
 }
 
 .card-content {
+    // RESPONSIVE MOBILE 
     @media(max-width:768px) {
         width: 100%;
         flex-direction: column;
@@ -115,6 +120,7 @@ p {
     background: rgb(252,70,107);
     background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
 
+    // RESPONSIVE MOBILE 
     @media(max-width:768px) {
         padding: 2px;
         width: 100%;
