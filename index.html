@@ -13,7 +13,7 @@
   </head>
   <body>
 
-    <div class="container">
+    <div id="container">
       <img src="./assets/bannerHeader.png" alt="banner header" />
     </div>
 
@@ -24,29 +24,41 @@
         O maior evento sobre varejo do mundo mostrando as tendências,
         oportunidades e inovações para o setor
       </p>
-      <p>Fonte: CMO ADOBE</p>
+      <p class="styles-fonts">Fonte: CMO ADOBE</p>
       <hr class="gradient" />
 
       <div class="cards">
-        <div>
+        <div class="card-content">
           <img id="NBA" src="./assets/bannerNba.png" alt="banner nba" />
           <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>
-          <p>Fonte: Daily Mail</p>
+          <p class="styles-fonts">Fonte: Daily Mail</p>
           <hr class="gradient-nba" />
         </div>
 
-        <div>
+        <div class="card-content">
           <img id="WPP" src="./assets/bannerWpp.png" alt="banner wpp" />
           <h2>Whatsapp terá função de pagamentos em 2020.</h2>
-          <p>Fonte: Proxxima</p>
+          <p class="styles-fonts">Fonte: Proxxima</p>
           <hr class="gradient-wpp"/>
         </div>
       </div>
     </section>
-    <footer class="container">
+    <footer id="container">
         <img src="./assets/bannerFooter.png" alt="banner footer">
-        <p>Copyright ® Mandarin. Todos os direitos reservados.</p>
-        <p>Caso não deeseje mais receber nossos e-mails, por favor <a href="/"> clique aqui </a></p>
+        <div id="text-footer">
+          <p>
+            Copyright ® Mandarin. Todos os direitos reservados.
+            <br>
+            Caso não deeseje mais receber nossos e-mails, por favor 
+            <a onclick="openAlert()" href=""> clique aqui </a>
+          </p>
+          
+        </div>
     </footer>
   </body>
+  <script>
+    function openAlert() {
+      alert("Você não recebera novos e-mails !")
+    }
+  </script>
 </html>
