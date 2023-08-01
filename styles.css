@@ -27,6 +27,7 @@ img {
     align-items: center;
     width: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 section {
@@ -59,17 +60,8 @@ p {
 
 .styles-fonts {
     font-style: oblique ;
-}
-
-.gradient {
-    width: 280px;
-    height: 5px;
-    border: none;
-    
-    margin-bottom: 30px;
-
-    background: rgb(252,70,107);
-    background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+    color: #3339;
+    font-size: 13px;
 }
 
 .cards {
@@ -111,6 +103,24 @@ p {
         margin-top: 5px;
     }
 }
+
+
+.gradient {
+    width: 280px;
+    height: 5px;
+    border: none;
+    
+    margin-bottom: 30px;
+
+    background: rgb(252,70,107);
+    background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+
+    @media(max-width:768px) {
+        padding: 2px;
+        width: 100%;
+    }
+}
+
 
 .gradient-nba {
     width: 180px;
